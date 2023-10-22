@@ -1,0 +1,32 @@
+.navbar {
+  background-color: white;
+}
+
+.navs {
+  cursor: pointer;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: purple;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none; 
+}
+
+.nav-link:hover {
+  background-color: transparent;
+  color: purple;
+  border: 2px solid purple;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.nav-link.active {
+  background-color: rgb(221, 187, 253);
+  border-radius: 8px;
+  border: none; 
+  color: white; 
+}

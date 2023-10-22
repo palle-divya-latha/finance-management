@@ -1,0 +1,92 @@
+.login-signup {
+   background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+    margin: 0 auto;
+    align-items: center;
+    max-width: 380px;
+    height: fit-content; 
+    top: 40px;
+    
+    
+   
+  }
+
+  .card{
+    margin-top: 60px;
+  }
+  
+  
+  h2 {
+    color: purple;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin: 10px 0;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(236, 222, 249);
+  }
+  
+  .login-button {
+    background-color: rgb(221, 187, 253);
+    color: purple;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .login-button:hover {
+    background-color: transparent;
+    border: 2px solid purple;
+    padding: 10px 20px;
+  }
+  
+  .toggle-button {
+    color: purple;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .toggle-button:hover {
+    text-decoration: none;
+  }
+  
+
+  @media screen and (min-width: 0px) and (max-width: 400px) { 
+  
+    .login-signup {
+      background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+    margin: 0 auto;
+    
+    max-width: 350px;
+    height: fit-content; 
+    
+      margin: 10px;
+      
+    }
+
+  
+  }
