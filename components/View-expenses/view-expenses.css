@@ -1,0 +1,163 @@
+.view-expenses{
+    background-color: rgb(238, 235, 235);
+    margin: 25px;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* view-expenses.css */
+
+/* Add borders to the table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px;
+    background-color: white;
+    align-items: center;
+   
+    
+  }
+  
+  /* Style the table header */
+  .table th {
+    background-color: #343a40;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px;
+    align-items: center;
+  }
+  
+  /* Style the table cells */
+  .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Style the alternating row colors */
+  .table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the action buttons (e.g., Edit and Delete buttons) */
+  .table .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Style the Edit and Delete buttons */
+  .table .edit-button,
+  .table .delete-button {
+    background-color: transparent;
+    color: #fff;
+    padding: 5px 10px;
+    border: solid 5px purple;
+    cursor: pointer;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Add these styles for button styling */
+.create-button {
+  background-color: transparent; /* Blue background color */
+  color: #fff; /* Text color */
+  padding: 10px; /* Padding around the text */
+  border: solid 5px purple; /* No border */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.create-button:hover {
+  background-color: transparent; 
+  border: solid 5px purple;
+}
+
+/* Style the edit and delete buttons */
+.table .edit-button,
+.table .delete-button {
+  background-color: #28a745; /* Green background color */
+  color: #fff; /* Text color */
+  padding: 5px 10px; /* Padding around the text */
+  border: none; /* No border */
+  cursor: pointer; 
+  outline: none;
+}
+
+.table .edit-button:hover,
+.table .delete-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+
+  /* Adjust styling for the buttons and select elements as needed */
+  
+  /* Style the Edit and Delete buttons on hover */
+  .table .edit-button:hover,
+  .table .delete-button:hover {
+    background-color: #218838;
+  }
+
+
+  .scroll-area {
+    overflow-x: auto;
+  }
+  
+  /* Additional styles to make it responsive */
+  .scroll-table {
+    width: auto;
+    white-space: nowrap;
+  }
+  
+  .scroll-table th,
+  .scroll-table td {
+    min-width: 100px; /* Adjust this value as needed */
+  }
+  
+
+/* Styles for screens up to 850px width */
+@media screen and (max-width: 850px) {
+  .view-expenses {
+    background-color: rgb(238, 235, 235);
+    margin: 10px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: xx-small;
+  }
+
+  .createbtn,
+  .select-month-btn,
+  .monthbtn,
+  .select-year-btn,
+  .searchbtn {
+    font-size: xx-small;
+    height: fit-content;
+    padding: 0;
+    width: 80px;
+    align-items: center;
+  }
+
+  .table-card {
+    width: 100%; /* Set the width of the card as needed */
+    overflow-x: auto; /* Enable horizontal scrolling within the card */
+  }
+
+  .table {
+    width: 1000px; /* Adjust the width as needed */
+    white-space: nowrap;
+    margin: 10px;
+    margin-right: 10px;
+  }
+
+  .table th, .table td {
+    min-width: 100px; /* Adjust this value as needed */
+  }
+}
+

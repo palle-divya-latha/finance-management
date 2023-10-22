@@ -1,0 +1,70 @@
+/* Customize the modal header */
+
+.modal-header {
+    background-color: #e1e1e1;
+    color: #fff;
+    border: none;
+  }
+  button, .btn-primary{
+    background-color: rgb(221, 187, 253);
+    color: purple;
+
+  }
+  button, .btn-primar:hover{
+    background-color: transparent;
+    border: solid 3px purple;
+    color: purple;
+  }
+  
+  /* Customize the modal title */
+  .modal-title {
+    font-size: 24px;
+    color: purple; /* Set the heading color to purple */
+  }
+  
+  /* Customize the modal body */
+  .modal-body {
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  /* Set a maximum height and enable vertical scrolling for the modal content */
+  .modal-content {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  /* Customize the modal footer */
+  .modal-footer {
+    background-color: #f8f9fa;
+    border: none;
+  }
+  
+  /* Customize the close button */
+  .close {
+    color: #000;
+    font-size: 24px;
+  }
+  
+  /* Style the Learn More button */
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the Close button */
+  .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #545b62;
+  }
+  

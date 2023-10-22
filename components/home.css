@@ -1,0 +1,105 @@
+.home-background {
+    background-color: white;
+    margin: 55px;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ }
+  
+
+.image-container{
+    margin-left: -50%;
+}
+ 
+ .image {
+    max-width: 100%; 
+    width: 100%;
+    height: 80%;
+    margin: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+ }
+ 
+
+ 
+ .title-card {
+    background-color: transparent;
+    position: fixed; 
+    top: 40%; 
+    left: 160px; 
+    width: auto;
+    padding: 10px;
+    transform: translateY(-50%); 
+  }
+
+  
+   
+
+ .title{
+    align-items: center;
+   
+   
+ }
+ 
+.btn{
+    color: purple;
+    background-color:rgb(221, 187, 253);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: -10px;
+}
+
+.btn:hover {
+    color: purple;
+    background-color: transparent;
+    border: 2px solid purple; /* Add a purple solid border on hover */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+  /* Rest of your CSS styles */
+  
+  @media screen and (min-width: 0px) and (max-width: 890px) {
+    .home-background {
+        background-color: white;
+        margin: 20px;
+        height: 570px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+     }
+     .title-card {
+        top: 40%; /* Adjust the vertical position for smaller screens */
+        left: 5px; /* Adjust the left position for smaller screens */
+        transform: translateY(-50%);
+        margin-top: 150px;
+        margin-left: -5px;
+    }
+    
+  .title{
+    font-size: 15px;
+  }
+
+    .heading{
+        font-size: 15px;
+        margin-left: -30px;
+        overflow: hidden;
+        width: fit-content;
+    }
+
+    .app-description{
+        font-size: 10px;
+       
+        overflow: hidden;
+        width: fit-content;
+    }
+    
+
+   
+   
+  }
+  
