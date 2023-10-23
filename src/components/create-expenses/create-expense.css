@@ -1,0 +1,16 @@
+.custom-button {
+    background-color: rgb(221, 187, 253);
+    color: purple;
+    border: 2px solid purple;
+    outline: none;
+    border-radius: 8px;
+    transition: background 0.3s, border 0.3s, outline 0.3s, color 0.3s;
+  }
+  
+  .custom-button:hover {
+    background: transparent;
+    border: 2px solid purple;
+    outline: none;
+    color: purple;
+  }
+  
