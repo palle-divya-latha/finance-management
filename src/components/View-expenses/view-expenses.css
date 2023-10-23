@@ -6,7 +6,7 @@
     justify-content: flex-end;
     align-items: center;
 }
-/* view-expenses.css */
+
 
 /* Add borders to the table */
 .table {
@@ -119,8 +119,14 @@
   }
   
 
+  @media screen and (min-width: 851px) {
+    .searchdiv{
+      margin-right: 35px;
+    }
+  }
+
 /* Styles for screens up to 850px width */
-@media screen and (max-width: 850px) {
+@media screen and (min-width: 0px) and (max-width: 850px) {
   .view-expenses {
     background-color: rgb(238, 235, 235);
     margin: 10px;
@@ -132,6 +138,7 @@
     font-size: xx-small;
   }
 
+ 
   .createbtn,
   .select-month-btn,
   .monthbtn,
@@ -142,6 +149,11 @@
     padding: 0;
     width: 80px;
     align-items: center;
+  }
+
+
+  .searchdiv{
+    margin: none;
   }
 
   .table-card {
