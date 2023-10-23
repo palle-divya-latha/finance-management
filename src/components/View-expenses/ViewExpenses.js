@@ -111,6 +111,12 @@ const ExpenseTable = () => {
       });
     }
 
+      filteredExpenses.sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    return dateA - dateB;
+  });
+
     if (searchText) {
       filteredExpenses = filteredExpenses.filter((expense) =>
         expense.name.toLowerCase().includes(searchText.toLowerCase())
@@ -122,76 +128,87 @@ const ExpenseTable = () => {
 
   return (
     <>
-      <div style={{ display: 'flex', flexDirection: 'row' }}>
+     <div
+  style={{
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  }}
+>
+  <div
+  className='searchdiv'
+  >
+    {/* Search input button code starts here */}
+    <input
+      style={{
+        cursor: 'pointer',
+        backgroundColor: 'white',
+        color: 'purple',
+        border: 'none',
+        padding: '10px',
+        borderRadius: '8px',
+        margin: '15px',
+        marginRight: '15px',
+        maxWidth: '250px',
+        outline: 'none',
+      }}
+      className="searchbtn"
+      type="text"
+      placeholder="Search by Name"
+      value={searchText}
+      onChange={(e) => setSearchText(e.target.value)}
+    />
+    {/* Search input button code ends here */}
+  </div>
 
-      {/* create button code starts here*/}
+  <div>
+    {/* Select filter button code starts here */}
+    <select
+      style={{
+        cursor: 'pointer',
+        backgroundColor: 'white',
+        color: 'purple',
+        border: 'none',
+        padding: '10px',
+        borderRadius: '8px',
+        margin: '15px',
+        outline: 'none',
+      }}
+      className="select-month-btn"
+      value={filterOption}
+      onChange={(e) => setFilterOption(e.target.value)}
+    >
+      <option value="None">Select Filter</option>
+      <option value="Month">Filter by Month</option>
+      <option value="Year">Filter by Year</option>
+    </select>
+    {/* Select filter button code ends here */}
+  </div>
 
-        <button className='createbtn'
-          onClick={() => setShowCreateModal(true)}
-          style={{
-            cursor: 'pointer',
-            backgroundColor: 'white',
-            color: 'purple',
-            border: 'none',
-            padding: '10px',
-            borderRadius: '8px',
-            margin: '15px',
-            outline: 'none'
-          }}
-        >
-          CreateExpense
-        </button>
-        {createExpenseError && <div className="error-message">{createExpenseError}</div>}
-        <CreateExpense show={showCreateModal} onHide={() => setShowCreateModal(false)} onCreate={handleCreateExpense} />
+  <div>
+    {/* Create button code starts here */}
+    <button
+      className="createbtn"
+      onClick={() => setShowCreateModal(true)}
+      style={{
+        cursor: 'pointer',
+        backgroundColor: 'white',
+        color: 'purple',
+        border: 'none',
+        padding: '10px',
+        borderRadius: '8px',
+        margin: '15px',
+        outline: 'none',
+      }}
+    >
+      CreateExpense
+    </button>
+    {createExpenseError && <div className="error-message">{createExpenseError}</div>}
+    <CreateExpense show={showCreateModal} onHide={() => setShowCreateModal(false)} onCreate={handleCreateExpense} />
+    {/* Create button code ends here */}
+  </div>
 
-         {/* create button code ends here*/}
-
-          {/* select filter button code starts here*/}
-
-        <select
-         style={{
-          cursor: 'pointer',
-          backgroundColor: 'white',
-          color: 'purple',
-          border: 'none',
-          padding: '10px',
-          borderRadius: '8px',
-          margin: '15px',
-          outline: 'none'
-        }}
-        className='select-month-btn'
-        value={filterOption} onChange={(e) => setFilterOption(e.target.value)}>
-          <option value="None"
-          
-          >Select Filter</option>
-          <option value="Month">Filter by Month</option>
-          <option value="Year">Filter by Year</option>
-        </select>
-
-        {/* select filter button code ends here*/}
-
-        {/* search input button code starts here*/}
-       
-        <input
-         style={{
-          cursor: 'pointer',
-          backgroundColor: 'white',
-          color: 'purple',
-          border: 'none',
-          padding: '10px',
-          borderRadius: '8px',
-          margin: '15px',
-          maxWidth: '250px',
-          outline: 'none'
-        }}
-        className='searchbtn'
-          type="text"
-          placeholder="Search by Name"
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-        />
-
-        {/* search input button code ends here*/}
 
         {/* Table code starts here*/}
       
