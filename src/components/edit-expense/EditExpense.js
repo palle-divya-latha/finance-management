@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import './edit-expense.css'
 
 
 const EditExpense = ({ show, onHide, expense, onUpdate }) => {
@@ -111,13 +112,14 @@ const EditExpense = ({ show, onHide, expense, onUpdate }) => {
         </form>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" onClick={onHide}>
-          Close
-        </Button>
-        <Button variant="primary" onClick={handleUpdate}>
-          Update
-        </Button>
-      </Modal.Footer>
+  <Button variant="secondary" onClick={onHide} className="custom-button">
+    Close
+  </Button>
+  <Button variant="primary" onClick={handleUpdate} className="custom-button">
+    Update
+  </Button>
+</Modal.Footer>
+
     </Modal>
   );
 };
